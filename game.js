@@ -18,16 +18,6 @@ $(document).keypress(function()
     
 })
 
-$(document).click(function()
-{
-    if (!started){
-        $("#level-title").text("Level " + level);
-        nextSequence();
-        started=true;
-    }
-    
-})
-
 $(".btn").on("click", function()
 {
     var userChosenColour = $(this).attr("id");
